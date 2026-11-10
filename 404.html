@@ -15,7 +15,7 @@
   --f-titulo:"Fredoka","Trebuchet MS",system-ui,sans-serif;
   --f-texto:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
   --raio:22px;
-  --degrade:linear-gradient(160deg,var(--primaria) 0%,var(--secundaria) 100%);
+  --degrade:var(--primaria);
   --patas:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23fff' fill-opacity='.07'%3E%3Cg transform='translate(18 20) rotate(-18)'%3E%3Cellipse cx='12' cy='17' rx='7' ry='6'/%3E%3Ccircle cx='4' cy='8' r='3'/%3E%3Ccircle cx='10' cy='3' r='3'/%3E%3Ccircle cx='17' cy='4' r='3'/%3E%3Ccircle cx='22' cy='10' r='3'/%3E%3C/g%3E%3Cg transform='translate(74 70) rotate(22)'%3E%3Cellipse cx='12' cy='17' rx='7' ry='6'/%3E%3Ccircle cx='4' cy='8' r='3'/%3E%3Ccircle cx='10' cy='3' r='3'/%3E%3Ccircle cx='17' cy='4' r='3'/%3E%3Ccircle cx='22' cy='10' r='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
 }
 *,*::before,*::after{box-sizing:border-box}
@@ -70,15 +70,15 @@ a{color:var(--primaria)}
 .hero-ctas .btn{flex:1 1 240px}
 
 /* "Almofada": foto com cantos bem redondos, como a pata do logo, e a coroinha */
-.almofada{position:relative;margin:0;border-radius:34% 34% 30% 30% / 30% 30% 34% 34%;border:6px solid #fff;background:#fff;box-shadow:0 14px 30px rgba(6,30,60,.22)}
+.almofada{position:relative;margin:0;border-radius:34% 34% 30% 30% / 30% 30% 34% 34%;border:6px solid #fff;background:#fff}
 .almofada picture,.almofada img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}
-.almofada-coroa{position:absolute;top:-18px;left:50%;transform:translateX(-50%) rotate(-8deg);display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#fff;color:var(--primaria);box-shadow:0 4px 10px rgba(6,30,60,.2)}
+.almofada-coroa{position:absolute;top:-18px;left:50%;transform:translateX(-50%) rotate(-8deg);display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#fff;color:var(--primaria)}
 .almofada-coroa .ico{width:28px;height:28px}
 .hero-foto{width:min(56vw,230px);aspect-ratio:1;margin:14px auto 0}
 
 /* Diferenciais: cartão branco que sobe em cima da faixa azul */
 .difs{position:relative;z-index:2;margin-top:-44px}
-.difs-lista{list-style:none;margin:0;padding:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px;background:#fff;border-radius:var(--raio);box-shadow:0 10px 28px rgba(6,30,60,.12)}
+.difs-lista{list-style:none;margin:0;padding:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px;background:#fff;border-radius:var(--raio);border:2px solid var(--secundaria)}
 .difs-lista li{display:flex;align-items:center;gap:10px;font:600 .95rem/1.2 var(--f-titulo);color:var(--secundaria);min-width:0}
 .dif-ico{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:14px;background:var(--primaria-suave);color:var(--primaria)}
 .dif-ico .ico{width:24px;height:24px}
