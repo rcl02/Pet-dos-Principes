@@ -21,7 +21,6 @@ h3{font-size:1.2rem}
 .servico h3{margin:0 0 .2em}
 .servico p{color:var(--texto-suave);margin:0}
 .servico-pe{grid-column:2;grid-row:1/span 2;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
-.servico-preco{font:600 .95rem/1.2 var(--f-titulo);color:var(--secundaria)}
 .link-whats{display:inline-flex;align-items:center;gap:.35em;min-height:44px;font:600 1rem/1 var(--f-titulo);color:var(--primaria);text-decoration:none}
 .link-whats:hover{text-decoration:underline}
 .servico--mais{background:var(--degrade);border:0;padding:22px 24px;border-radius:var(--raio);margin-top:28px;color:#fff}
